@@ -1,0 +1,104 @@
+body{
+    background-color: #fff;
+    margin: 0;
+}
+header{
+    background-color: white;
+    height: 5em;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: backgroung-color 0.4s ease-in-out;
+}
+header.scrolled{
+    background-color: rgb(239, 62, 136);
+    opacity: 0.98;
+}
+header nav{
+    padding: 1.5em 0 1.5em 5em;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+   padding-left: 7rem;
+    font-size: 1.3rem;
+    margin: 1em;
+    transition: color 0.4s ease-in-out;
+}
+header.scrolled nav a{
+    color: white;
+ }
+div{
+    height: 500px;
+    padding: 2em 6em 2em 6em;
+}
+section{
+    padding: 1.5rem 9%;
+    
+}
+.pachagani .container{
+    
+    border: 1px solid black;
+    background-color: #eee;
+}
+.pachagani img{
+    padding-top: 3rem;
+    padding-left: 12rem;
+}
+ .pachagani h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: red;
+}
+ .pachagani p{
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 9rem;
+    display: block;
+ }
+.mahableshwar .container{
+    border: 1px solid black;
+    background-color: #eee;
+}
+.mahableshwar img{
+    padding-top: 3rem;
+    padding-left: 12rem;
+   
+}
+.mahableshwar h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: red;
+    
+ }
+ .mahableshwar p{
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 9rem;
+    display: block;
+ }
+ .pratapgad .container{
+    border: 1px solid black;
+    background-color: #eee;
+}
+.pratapgad img{
+    padding-top: 3rem;
+    padding-left: 12rem;
+}
+.pratapgad h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: red;
+}
+ .pratapgad p{
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 9rem;
+    display: block;
+ }
+
+

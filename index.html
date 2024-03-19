@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Categories</a>
+            <a href="">Contact</a>
+            <a href="">Places</a>
+            
+        </nav>
+    </header>
+    <div>
+        <section class="pachagani" id="pachagani">
+            <h1 class="heading">Pachagani</h1>
+            <div class="container">
+            <img src="C:\Users\sujata Jagtap\Desktop\task1\pachagani.jpg">
+            <h1>PACHAGANI</h1>
+            <p>Panchgani, called Paachgani (in Marathi), is a hill station and municipal 
+                council in Satara district in Maharashtra,
+                 India. Panchgani attracts tourists throughout the year.</p>
+            </div>
+        </section>
+        <section class="mahableshwar" id="mahableshwar">
+            <h1 class="heading">Mahableshwar</h1>
+            <div class="container">
+            <img src="C:\Users\sujata Jagtap\Desktop\task1\mhableshwar.jpg">
+            <h1>MAHABLESHWAR</h1>
+            <p>Mahabaleshwar Tourism. Mahabaleshwar is a hill station located in the Western Ghats, 
+                in Satara district of Maharashtra.
+                 Apart from its strawberries, Mahabaleshwar is also well known for its</p>
+            </div>
+        </section>
+        <section class="pratapgad" id="pratapgad">
+            <h1 class="heading">Pratapgad</h1>
+            <div class="container">
+            <img src="C:\Users\sujata Jagtap\Desktop\task1\pratapgad.jpg">
+            <h1>PRATAPGAD</h1>
+            <p>Pratapgad is a mountain fort located in Satara district, in the Western Indian state
+                 of Maharashtra.
+                 The fort is situated 24 kilometres from the Mahabaleshwar hill station.</p>
+            </div>
+        </section>
+    </div>
+    </body>
+<script>
+    document.addEventListener('scroll', ()=>{
+        const header = document.querySelector('header');
+        if(window.scrollY> 0){
+            header.classList.add('scrolled');
+        }else{
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+</html>
