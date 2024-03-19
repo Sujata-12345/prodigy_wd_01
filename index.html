@@ -1,40 +1,110 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<html lang="en"> 
 
-<head>
-	<link rel="stylesheet" href="style.css">
-	<title>GFG App</title>
-</head>
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet" href="style.css"> 
+	</head> 
 
-<body>
-	<div class="container">
-		<div class="weather-card">
-			<h1 style="color: green;">
-				WEATHER APP
-			</h1>
-			<input type="text" id="city-input"
-				placeholder="Enter city name">
-			<button id="city-input-btn"
-					onclick="weatherFn($('#city-input').val())">
-					Get Weather
-			</button>
-			<div id="weather-info"
-				class="animate__animated animate__fadeIn">
-				<h3 id="city-name"></h3>
-				<p id="date"></p>
-				<img src="C:\Users\sujata Jagtap\Desktop\Task5\sun.jpg">
-				<p id="temperature"></p>
-				<p id="description"></p>
-				<p id="wind-speed"></p>
+<body> 
+	<header class="header"> 
+        <nav class="navbar"> 
+            <div class="logo"> 
+                <h2 class="logo-heading">Jagatp Sujata</h2> 
+                 <div class="links">
+                    <a href="#home">home</a>
+                    <a href="#about ">About</a>
+                    <a href="services">services</a>
+                    <a href="#contact">Contact me</a>
+				 </div>
+            </nav> 
+    </header> 
+    <!-- Main home banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			<div class="headings"> 
+				<h3 class="greet-heading">Hello, I'm</h3> 
+				<h1 class="my-heading">Jagtap Sujata</h1> 
+				<h4 class="sub-heading"> 
+					A student of BCA from Shivaji University.
+				</h4> 
+				</div> 
+			<div class="intro-buttons"> 
+				<button class="btn common-btn">Hire Me</button> 
+				<button class="btn ghost-btn">Get Resume</button> 
 			</div>
-		</div>
-	</div>
-	<script src=
-"https://code.jquery.com/jquery-3.6.0.min.js">
-	</script>
-	<script src=
-"https://momentjs.com/downloads/moment.min.js">
-	</script>
-	<script src="script.js"></script>
-</body>
-
+		</div> 
+		<div class="image"> 
+			<img src="C:\Users\sujata Jagtap\Desktop\task4\imgb.jpg"> 
+		</div> 
+	</section> 
+<!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-text"> 
+			<h1>About Me</h1> 
+			<p> 
+				Hello! 
+				My Name is Sujata Shahaji Jagtap . I am 
+				a graduate  student at Department of Bachelor of
+				Computer Application(BCA). I am student Of Second year hence i have no 
+				experience about job. 
+				I completed Some cource for advance Knowledge
+				<br>1]  MS-CIT<br>
+				2]  SARTHI<br>
+				3] spoken english cource <br>
+            </p> 
+			Last sem I worked on one mini project in html,CSS and JS.
+			Now I create a major project into the php.
+			<p> 
+				I am very interested in coding and I like to learn new things about coding. 
+            </p> 
+		</div> 
+		<div class="image"> 
+			<img src="C:\Users\sujata Jagtap\Desktop\task4\imgb.jpg">  
+		</div> 
+	</section> 
+<!-- Contact me section -->
+	<section class="contact" id="contact"> 
+			<h1>Contact Me</h1> 
+			<div class="box-container">
+		<div class="contact-content"> 
+			<div class="contact-form-container"> 
+				<h1 class="greet-heading">Get In Touch</h1> 
+				<form class="contact-form"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Name"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Email"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Phone"> 
+					<textarea class="form-controls"
+							placeholder="Write your message"
+							name="message" id="" cols="30"
+							rows="10"> 
+					</textarea> 
+					<input class="form-btn btn common-btn"
+						type="submit" value="Send Message"> 
+				</form> 
+			</div> 
+			<div class="contact-details"> 
+				<h1 class="greet-heading">My Contact Details</h1> 
+				<div class="details"> 
+					<h5 class="contact-heading">EMAIL</h5> 
+					<p class="contact-text">jagtapsujata952@gamil.com</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">PHONE</h5> 
+					<p class="contact-text">+91 9975167541</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">ADDRESS</h5> 
+					<p class="contact-text">At/post. Andhali Tal Man Dist Satara</p> 
+				</div> 
+			</div>
+		</div> 
+	</section> 
+</body> 
 </html>
