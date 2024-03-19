@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stopwatch</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    .container{
-        background-color: black;
-    }
-</style>
-<body>
-<div class="container">
-    <div class="box">
-    <div id="time">
-        <span class="digit" id="hr">00</span>
-        <span class="digit" id="hr">:</span>
 
-        <span class="digit" id="min">00</span>
-        <span class="digit" id="hr">:</span>
+<body> 
+	<div id="main"> 
+		<p> 
+		   First Player starts as 
+			<b>Player X </b>And Second Player as 
+			<b>Player O</b> 
+		</p> 
+		<br><br> 
+		<div class = "ui"> 
+			<div class="row"> 
+				<input type="text" id= "b1"
+					class="cell" onclick="myfunc_3(); myfunc();"
+					readonly> 
+				<input type="text" id= "b2"
+					class="cell" onclick="myfunc_4(); myfunc();"
+					readonly> 
+				<input type="text" id= "b3" class="cell"
+					onclick="myfunc_5(); myfunc();"
+					readonly> 
+			</div> 
+			<div class="row"> 
+				<input type="text" id= "b4"
+					class="cell" onclick="myfunc_6(); myfunc();"
+					readonly> 
+				<input type="text" id= "b5"
+					class="cell" onclick="myfunc_7(); myfunc();"
+					readonly> 
+				<input type="text" id= "b6"
+					class="cell" onclick="myfunc_8(); myfunc();"
+					readonly> 
+			</div> 
+			<div class="row"> 
+				<input type="text" id= "b7"
+					class="cell" onclick="myfunc_9(); myfunc();"
+					readonly> 
+				<input type="text" id= "b8"
+					class="cell" onclick="myfunc_10();myfunc();"
+					readonly> 
+				<input type="text" id= "b9"
+					class="cell" onclick="myfunc_11();myfunc();"
+					readonly> 
+			</div> 
+		</div> 
+		<br><br><br> 
+		
+		<button id="but" onclick="myfunc_2()"> RESET  </button> 
+		<br><br> 
+		<p id="print"></p> 
+	</div> 
+</body> 
 
-        <span class="digit" id="sec">00</span>
-        <span class="digit" id="hr">:</span>
-
-        <span class="digit" id="count">00</span>
-    </div>
-
-   <div id ="buttons">
-    <button class="btn"id="start">Start</button>
-     <button class="btn"id="stop">Pause</button>
-      <button class="btn"id="reset">Reset</button>
-    </div>
-    </div>
-</div>
-
-
-<script src="script.js"></script>
-
-</body>
+<script src="script.js"></script> 
 </html>
