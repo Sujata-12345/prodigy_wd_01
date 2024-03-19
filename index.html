@@ -1,62 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<title>GFG App</title>
 </head>
 
-<body> 
-	<div id="main"> 
-		<p> 
-		   First Player starts as 
-			<b>Player X </b>And Second Player as 
-			<b>Player O</b> 
-		</p> 
-		<br><br> 
-		<div class = "ui"> 
-			<div class="row"> 
-				<input type="text" id= "b1"
-					class="cell" onclick="myfunc_3(); myfunc();"
-					readonly> 
-				<input type="text" id= "b2"
-					class="cell" onclick="myfunc_4(); myfunc();"
-					readonly> 
-				<input type="text" id= "b3" class="cell"
-					onclick="myfunc_5(); myfunc();"
-					readonly> 
-			</div> 
-			<div class="row"> 
-				<input type="text" id= "b4"
-					class="cell" onclick="myfunc_6(); myfunc();"
-					readonly> 
-				<input type="text" id= "b5"
-					class="cell" onclick="myfunc_7(); myfunc();"
-					readonly> 
-				<input type="text" id= "b6"
-					class="cell" onclick="myfunc_8(); myfunc();"
-					readonly> 
-			</div> 
-			<div class="row"> 
-				<input type="text" id= "b7"
-					class="cell" onclick="myfunc_9(); myfunc();"
-					readonly> 
-				<input type="text" id= "b8"
-					class="cell" onclick="myfunc_10();myfunc();"
-					readonly> 
-				<input type="text" id= "b9"
-					class="cell" onclick="myfunc_11();myfunc();"
-					readonly> 
-			</div> 
-		</div> 
-		<br><br><br> 
-		
-		<button id="but" onclick="myfunc_2()"> RESET  </button> 
-		<br><br> 
-		<p id="print"></p> 
-	</div> 
-</body> 
+<body>
+	<div class="container">
+		<div class="weather-card">
+			<h1 style="color: green;">
+				WEATHER APP
+			</h1>
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="animate__animated animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<img src="C:\Users\sujata Jagtap\Desktop\Task5\sun.jpg">
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="script.js"></script>
+</body>
 
-<script src="script.js"></script> 
 </html>
